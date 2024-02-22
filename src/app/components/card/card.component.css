@@ -1,0 +1,61 @@
+/* Estilo para o formulário */
+.form_sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pessoal_section, .address_section {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 100px;
+}
+
+.business_card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 20%;
+}
+
+.business_card p {
+  margin: 5px 0;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.card_section {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.address_info_card{
+  margin-top: 20px;
+}

@@ -1,0 +1,57 @@
+<form  [formGroup]='cardForm'>
+  <div class="form_sections">
+    <div class="pessoal_section">
+      <p>Informações pessoais</p>
+      <label>Nome :</label>
+      <input type="text" id="name" formControlName='name' placeholder="Digite seu nome">
+    
+      <label>Idade :</label>
+      <input type="number" id="age" formControlName='age' placeholder="Digite sua idade">
+    
+      <label>Telefone :</label>
+      <input type="number" id="phone_number" formControlName='phone_number' placeholder="Digite seu telefone">
+    
+      <label>Email :</label>
+      <input type="email" id="email" formControlName='email' placeholder="Digite seu email">
+    </div>
+  
+    <div class="address_section" >
+      <p>Informações de endereço</p>
+      <label>Endereço :</label>
+      <input type="text" id="address" formControlName='address' placeholder="Digite o endereço">
+  
+      <label>Número :</label>
+      <input type="number" id="address_number" formControlName='address_number' placeholder="Digite o número">
+  
+      <label>Bairro :</label>
+      <input type="text" id="district" formControlName='district' placeholder="Digite o bairro">
+  
+      <label>Cidade :</label>
+      <input type="text" id="city" formControlName='city' placeholder="Digite a cidade">
+    </div>
+  </div>
+  <button class="btn" (click)="submit()">Criar cartão</button>
+</form>
+
+@if(cardModel) {
+  <div class="card_section">
+    <div class="business_card">
+      <div class="personal_info_card">
+        <div>
+          <p>Nome: {{cardModel.name}}</p>
+          <p>Idade: {{cardModel.age}}</p>
+        </div>
+        <div>
+          <p>Telefone: {{cardModel.phone_number}}</p>
+          <p>email: {{cardModel.email}}</p>
+        </div>
+      </div>
+      <div class="address_info_card">
+        <p>Endereço: {{cardModel.address}}</p>
+        <p>Número: {{cardModel.address_number}}</p>
+        <p>Bairro: {{cardModel.district}}</p>
+        <p>Cidade: {{cardModel.city}}</p>
+      </div>
+    </div>
+  </div>
+}
